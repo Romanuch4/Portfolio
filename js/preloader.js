@@ -1,6 +1,9 @@
 (function () {
   window.addEventListener('load', function () {
     let preloader = document.querySelector('.preloader');
-    preloader.style.display = 'none';
+    const stopShowPreloader = () => {
+      preloader.style.display = 'none';
+    };
+    this.setTimeout(stopShowPreloader, 4000);
   });
 })();
