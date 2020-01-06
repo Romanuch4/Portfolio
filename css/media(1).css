@@ -1,13 +1,18 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1500px) {
-  
+@media only screen and (min-width : 1800px) {
+  .header__logo {
+    padding-left: 0px;
+  }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 1260px) {
-  
+@media only screen and (max-width : 1024px) {
+  .header__logo {
+    padding-left: 10.06588579795022%;
+    padding-right: 0;
+  }
 }
 
 
@@ -21,6 +26,10 @@
 
   .preloader__title:before {
     border-bottom: 12px solid #00ffff;
+  }
+
+  .header__nav {
+    padding-right: 5%;
   }
 }
 

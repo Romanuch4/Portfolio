@@ -4,6 +4,6 @@
     const stopShowPreloader = () => {
       preloader.style.display = 'none';
     };
-    this.setTimeout(stopShowPreloader, 4000);
+    this.setTimeout(stopShowPreloader, 3000);
   });
 })();
