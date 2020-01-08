@@ -4,7 +4,7 @@
 	transition: 0.6s ease-in;
 }
 
-a:focus,input:focus, button:focus, img:focus {
+a:focus,input:focus, button:focus, img:focus, div:focus {
 	outline: none;
 	-webkit-box-shadow: 5px 5px 5px 0px rgba(117, 78, 249, 0.8);
 	-moz-box-shadow:    5px 5px 5px 0px rgba(117, 78, 249, 0.8);
@@ -95,6 +95,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	display: none;
+	cursor: pointer;
 }
 
 .header__mobile-menu__item {
