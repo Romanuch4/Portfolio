@@ -1,9 +1,58 @@
 /*==========  Desktop First Method  ==========*/
-
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1800px) {
   .header__logo {
     padding-left: 0px;
+  }
+
+  .first__social {
+    right: 0;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 2000px) {
+  .first__social {
+    right: 8%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 2250px) {
+  .first__social {
+    right: 12%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 2500px) {
+  .first__social {
+    right: 16%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 1300px) {
+  .first__social {
+    right: -15%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 1200px) {
+  .first__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first__left {
+    align-self: flex-start;
+  }
+
+  .first__main {
+    margin-top: 0px;
+    position: relative;
+    bottom: 130px;
   }
 }
 
@@ -39,14 +88,108 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 780px) {
+@media only screen and (max-width : 768px) {
+  .first__main {
+    bottom: 0;
+  }
 
+  .first__intro {
+    align-self: center;
+    left: 0;
+  }
+
+  .first__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .first__left {
+    width: 100%;
+    max-width: 410px;
+  }
+
+  .first__social {
+    right: -25%;
+  }
+
+  .header__mobile-menu {
+    display: flex;
+    transition-timing-function: linear;
+  }
+
+  .header-mobile-menu-2 {
+    transform: rotate(-90deg);
+  }
+
+  .header__nav {
+    padding-right: 0;
+    padding-bottom: 15px;
+    width: 68%;
+    position: absolute;
+    z-index: 1;
+    top: -1000px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    transition-timing-function: linear;
+    -webkit-box-shadow: 0px 9px 20px 0px rgba(117, 48, 249, 1);
+    -moz-box-shadow:    0px 9px 20px 0px rgba(117, 48, 249, 1);
+    box-shadow:         0px 9px 20px 0px rgba(117, 48, 249, 1);
+  }
+
+  .header__li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .header__logo {
+    padding-left: 3%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 650px) {
+  .header {
+    background-image: linear-gradient(to right, #754EF9 38%, #fff 38%);
+  }
+
+  .first {
+    background-image: linear-gradient(to right, #754EF9 38%, #fff 38%);
+  }
 }
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 560px) {
-  
+@media only screen and (max-width : 600px) {
+  .first__left {
+    width: 100%;
+    max-width: 310px;
+  }
+
+  .first__social {
+    right: -35%;
+  }
+
+  .first__main__title {
+    width: 100%;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 540px) {
+  .first__social {
+    right: -44%;
+  }
+
+  .header {
+    background-image: linear-gradient(to right, #754EF9 45%, #fff 45%);
+  }
+
+  .first {
+    background-image: linear-gradient(to right, #754EF9 45%, #fff 45%);
+  }
 }
 
 
@@ -63,6 +206,24 @@
   }
 }
 
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 430px) {
+  .first__social {
+    right: -56%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 390px) {
+  .first__social {
+    right: -63%;
+    width: 530px;
+  }
+}
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 370px) {
   .preloader__title {
@@ -74,5 +235,27 @@
 
   .preloader__title:before {
     border-bottom: 10px solid #00ffff;
+  }
+
+  .first__social {
+    right: -70%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 340px) {
+  .header {
+    background-image: linear-gradient(to right, #754EF9 48%, #fff 48%);
+  }
+
+  .first {
+    background-image: linear-gradient(to right, #754EF9 48%, #fff 48%);
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 320px) {
+  .first__social {
+    right: -75%;
   }
 }
