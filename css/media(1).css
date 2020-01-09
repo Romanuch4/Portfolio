@@ -64,6 +64,14 @@
   }
 }
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 920px) {
+  .second__item {
+    margin-top: 40px;
+    box-sizing: content-box;
+  }
+}
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 910px) {
@@ -80,11 +88,6 @@
   .header__nav {
     padding-right: 5%;
   }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 860px) {
-  
 }
 
 /* Small Devices, Tablets */
