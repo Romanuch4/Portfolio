@@ -150,6 +150,11 @@
   .header__logo {
     padding-left: 3%;
   }
+
+  .third__item-8 {
+    width: 90%;
+    background: url('../img/third-8.png') no-repeat 100%;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -215,6 +220,10 @@
     right: -56%;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .third__item {
+    widtH: 90%;
   }
 }
 
