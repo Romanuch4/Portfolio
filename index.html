@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>My portfolio</title>
   <meta charset="utf-8"/>
@@ -86,13 +86,13 @@
 			<div class="first__social__hr"></div>
 			<div class="first__social__socials">
 				<a class="first__social__link" href="#">
-					<i class="fab fa-facebook-f first__social__icon" alt="Facebook"></i>
+					<i class="fab fa-facebook-f first__social__icon"></i>
 				</a>
 				<a class="first__social__link" href="#">
-					<i class="fab fa-twitter first__social__icon"alt="Twitter"></i>
+					<i class="fab fa-twitter first__social__icon"></i>
 				</a>
 				<a class="first__social__link" href="#">
-					<i class="fab fa-linkedin-in first__social__icon"alt="Linkedin"></i>
+					<i class="fab fa-linkedin-in first__social__icon"></i>
 				</a>
 			</div>
 		</aside>
@@ -318,12 +318,111 @@
 					</div>
 				</div>
 			</section>
+
+<!--==================== 4 screen ====================-->
+			<section class="fourth third">
+				<h2 class="section__title">
+					Valuable Testimonial
+				</h2>
+				<h3 class="section__sub-title">
+					See People Say About Me
+				</h3>
+				<div class="fourth__background"></div>
+				<div class="fourth__slider">
+					<div class="fourth__slider__content">
+						<div class="fourth__slider__item">
+							<img src="img/slider-photo.png" alt="user"/>
+							<h4 class="fourth__slider__name">
+								Jhon Wick, New York
+							</h4>
+							<p class="fourth__slider__text">
+								Writing paragraphs takes practice, but what should students write about? Good paragraph writing prompts allow students to write about what they know and like, so their focus can be on the writing process and using the four essential elements.
+							</p>
+						</div>
+
+						<div class="fourth__slider__item">
+							<img src="img/slider-photo.png" alt="user"/>
+							<h4 class="fourth__slider__name">
+								Jhon Wick, New York
+							</h4>
+							<p class="fourth__slider__text">
+								Writing paragraphs takes practice, but what should students write about? Good paragraph writing prompts allow students to write about what they know and like, so their focus can be on the writing process and using the four essential elements.
+							</p>
+						</div>
+
+						<div class="fourth__slider__item">
+							<img src="img/slider-photo.png" alt="user"/>
+							<h4 class="fourth__slider__name">
+								Jhon Wick, New York
+							</h4>
+							<p class="fourth__slider__text">
+								Writing paragraphs takes practice, but what should students write about? Good paragraph writing prompts allow students to write about what they know and like, so their focus can be on the writing process and using the four essential elements.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="fourth__slider__buttons">
+					<div data-left="0" tabindex="0" class="fourth__slider__button"></div>
+					<div data-left="-100" tabindex="0" class="fourth__slider__button"></div>
+					<div data-left="-200" tabindex="0" class="fourth__slider__button"></div>
+				</div>
+			</section>
+
+<!--==================== 5 screen ====================-->
+			<section class="fifth third">
+				<h2 class="section__title">
+					Want To Hire Me?
+				</h2>
+				<h3 class="section__sub-title">
+					Want To Hire Me?
+				</h3>
+				<form class="fifth__form">
+					<input class="fifth__input" type="text" placeholder="enter your email"/>
+					<button class="fifth__button">
+						Hire Me
+					</button>
+				</form>
+			</section>
 		</article>
 	</main>
 
 <!--==================== Footer ====================-->
 	<footer class="footer">
-		
+		<div class="footer__content">
+			<h2 class="footer__portfolio">
+				Portfolio
+			</h2>
+			<nav class="footer__nav">
+				<ul>
+					<li class="footer__nav-li">
+						<a class="footer__nav-a" href="#">
+							About me
+						</a>
+					</li>
+					<li class="footer__nav-li">
+						<a class="footer__nav-a" href="#">
+							Portfolio
+						</a>
+					</li>
+					<li class="footer__nav-li">
+						<a class="footer__nav-a" href="#">
+							Download CV
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<nav>
+				<a class="footer__social" href="#about-me">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a class="footer__social" href="#portfolio">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a class="footer__social" href="#">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+			</nav>
+		</div>
 	</footer>
 
 <!--==================== Js ====================-->
@@ -331,6 +430,7 @@
 	<script src="js/preloader.js"></script>
 	<script src="js/mobile-menu.js"></script>
 	<script src="js/third-screen-focus.js"></script>
+	<script src="js/slider.js"></script>
 	<script>
 		new WOW().init();
 	</script>
