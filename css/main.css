@@ -20,6 +20,7 @@ a {
 
 body {
 	min-height: 100vh;
+	text-rendering: optimizeSpeed;
 }
 
 html {
