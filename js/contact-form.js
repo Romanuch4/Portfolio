@@ -1,19 +1,21 @@
 (function() {
   const button = document.querySelector('.fifth__button');
 
-  const ajaxGet = function() {
+  const ajaxGet = function (evt) {
+    evt.preventDefault();
     const request = new XMLHttpRequest();
     request.open('GET', 'contact.php');
     request.send();
     request.onreadystatechange = function() {
       if(request.readyState == 4 && request.status == 200) {
-        console.log(request.responceText);
+        console.log('1234567890');
       }
       else {
-        window.location.href = 'https://romanuch4.github.io/Portfolio/';
+        console.log('Что-то пошло не так');
+       /*  window.location.href = 'https://romanuch4.github.io/Portfolio/'; */
       }
     }
   }
 
-  button.addEventListener('click', ajaxGet);
+  button.addEventListener('click', evt => ajaxGet(evt));
 })();
