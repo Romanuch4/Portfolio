@@ -1,22 +1,16 @@
-jQuery(document).ready(function ($) {
+(function() {
+  const button = document.querySelector('.fifth__button');
 
-  $(".ajax-contact-form").submit(function () {
-    var str = $(this).serialize();
-
-    $.ajax({
-      type: "POST",
-      url: "http://domain.name/contact.php",
-      data: str,
-      success: function (msg) {
-        if (msg == 'OK') {
-          result = '<p>Ваш заказ принят</p>';
-          $(".fields").hide();
-        } else {
-          result = msg;
-        }
-        $('.note').html(result);
+  const ajaxGet = () => {
+    const request = XMLHttpRequest();
+    request.open('GET', 'contact.php');
+    request.send();
+    request.onreadystatechange = function() {
+      if(request.readyState == 4 && request.status == 200) {
+        console.log(request.responceText);
       }
-    });
-    return false;
-  });
-});
+    }
+  }
+
+  button.addEventListener('click', ajaxGet);
+})();
