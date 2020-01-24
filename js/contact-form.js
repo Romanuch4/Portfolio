@@ -4,11 +4,11 @@
   const ajaxGet = function (evt) {
     evt.preventDefault();
     const request = new XMLHttpRequest();
-    request.open('GET', '../contact.php', true);
+    request.open('POST', '../contact.php', true);
     request.setRequestHeader('Content-Type', 'application/x-www-form-url');
     request.onreadystatechange = function() {
       if(request.readyState == 4 && request.status == 200) {
-        console.log('1234567890');
+        console.log(1);
       }
       else {
         console.log('Что-то пошло не так');
@@ -16,7 +16,7 @@
       }
     }
 
-    request.send();
+    request.send(null);
   }
 
   button.addEventListener('click', evt => ajaxGet(evt));
